@@ -1,57 +1,27 @@
-body {
-  background: #e5e7eb;
-  font-family: Arial, sans-serif;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* RESUME */
-.resume {
-  width: 800px;
-  margin: 40px auto;
-  background: white;
-  padding: 40px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2);
-}
+body { font-family: 'Poppins', sans-serif; color: #e2e8f0; background: #0f172a; line-height: 1.6; }
 
-/* HEADER */
-.header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
+header { padding: 60px 0; background: linear-gradient(135deg, #1e293b, #6366f1); border-bottom: 4px solid #6366f1; }
 
-.profile {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+.container { width: 90%; max-width: 900px; margin: 40px auto; }
 
-/* CONTACT */
-.contact {
-  font-size: 14px;
-  color: #444;
-}
+.header-flex { display: flex; align-items: center; gap: 30px; }
 
-/* HEADINGS */
-h1 {
-  margin: 0;
-}
+.profile { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #fff; object-fit: cover; }
 
-h2 {
-  border-bottom: 2px solid black;
-  padding-bottom: 5px;
-  margin-top: 20px;
-}
+h1 { font-size: 2.2rem; margin-bottom: 5px; }
 
-.section {
-  margin-top: 10px;
-}
+h2 { margin-bottom: 20px; color: #fff; border-left: 4px solid #6366f1; padding-left: 15px; }
 
-.section span {
-  font-size: 13px;
-  color: gray;
-}
+.card { background: #1e293b; padding: 20px; border-radius: 12px; margin-bottom: 15px; transition: 0.3s; border: 1px solid #334155; }
+.card:hover { transform: translateY(-5px); border-color: #6366f1; }
 
-ul {
-  margin-top: 5px;
-}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+
+.linkedin-link { display: inline-block; margin-top: 10px; color: #818cf8; font-weight: 600; text-decoration: none; }
+.linkedin-link:hover { text-decoration: underline; }
+
+.skills-list span { display: inline-block; background: #334155; padding: 5px 12px; border-radius: 20px; margin: 5px; font-size: 0.85rem; }
+
+footer { text-align: center; padding: 40px; color: #64748b; }
