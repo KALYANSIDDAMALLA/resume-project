@@ -1,106 +1,104 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #eef2f7;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: #fff;
 }
 
-/* CONTAINER */
-.container {
+/* WRAPPER */
+.wrapper {
   display: flex;
   max-width: 1100px;
   margin: 50px auto;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(20px);
 }
 
 /* SIDEBAR */
 .sidebar {
   width: 30%;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: white;
+  background: rgba(255,255,255,0.05);
   padding: 30px;
   text-align: center;
+  backdrop-filter: blur(20px);
 }
 
 .profile {
-  width: 130px;
-  height: 130px;
+  width: 120px;
   border-radius: 50%;
-  border: 4px solid white;
   margin-bottom: 15px;
 }
 
 .role {
-  font-size: 14px;
-  opacity: 0.9;
+  color: #94a3b8;
 }
 
-.contact p {
-  margin: 10px 0;
+.links a {
+  margin: 10px;
+  color: white;
+  font-size: 18px;
 }
 
-.contact a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* SKILLS */
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  padding: 0;
-  list-style: none;
+  margin-top: 20px;
 }
 
-.skills li {
-  background: rgba(255,255,255,0.2);
-  padding: 6px 12px;
+.skills span {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  padding: 6px 10px;
   border-radius: 20px;
-  font-size: 13px;
+  margin: 5px;
+  font-size: 12px;
 }
 
 /* MAIN */
 .main {
   width: 70%;
   padding: 40px;
-  background: #fff;
 }
 
-h2 {
-  color: #2a5298;
+/* HERO */
+.hero h1 {
+  font-size: 32px;
+}
+
+.hero p {
+  color: #cbd5f5;
+}
+
+/* SECTION */
+.section {
+  margin-top: 30px;
+}
+
+.section h3 {
   margin-bottom: 10px;
 }
 
 /* CARD */
 .card {
-  background: #ffffff;
+  background: rgba(255,255,255,0.05);
   padding: 20px;
-  margin: 15px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin: 10px 0;
+  border-radius: 12px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03);
+  background: rgba(255,255,255,0.1);
 }
 
 .card span {
+  color: #94a3b8;
   font-size: 13px;
-  color: gray;
-}
-
-ul {
-  padding-left: 20px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .container {
+  .wrapper {
     flex-direction: column;
   }
 
