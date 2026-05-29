@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pavan Kalyan | Portfolio</title>
+  <title>Kalyan Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -23,12 +23,12 @@
     <img src="profile.jpg" class="profile">
 
     <h1>Siddamalla Pavan Kalyan</h1>
-    <p class="subtitle">Data Science Postgraduate</p>
+    <p class="subtitle">Data Scientist | ML Engineer</p>
 
     <div class="links">
-      <a href="mailto:Kalyansiddamalla8111@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://linkedin.com/in/kalyansiddamalla2707"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/KALYANSIDDAMALLA"><i class="fab fa-github"></i></a>
+      <a href="mailto:kalyansiddamalla8111@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
     </div>
 
     <div class="divider"></div>
@@ -39,54 +39,66 @@
       <span>Machine Learning</span>
       <span>SQL</span>
       <span>TensorFlow</span>
-      <span>Data Analysis</span>
-      <span>Statistics</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Matplotlib</span>
     </div>
   </aside>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN -->
   <main class="main">
 
+    <!-- HERO -->
     <section class="hero">
       <h2>About Me</h2>
       <p>
-        Data Science postgraduate focused on building machine learning solutions,
-        analytics systems, and data-driven applications.
+        Results-driven Data Science postgraduate with expertise in Machine Learning,
+        Data Analytics, and Predictive Modeling. Passionate about solving real-world
+        problems using data-driven approaches.
       </p>
     </section>
 
+    <!-- EXPERIENCE -->
     <section>
       <h2>Experience</h2>
 
-      <div class="item">
-        <div class="item-header">
-          <h3>Machine Learning Intern</h3>
-          <span>ISI Hyderabad • 2025</span>
-        </div>
-        <p>Built churn prediction models achieving 85% accuracy.</p>
+      <div class="card">
+        <h3>Machine Learning Intern</h3>
+        <span>Indian Statistical Institute • May 2025 – Jun 2025</span>
+        <p>
+          Analyzed telecom datasets to identify churn patterns and built predictive
+          models achieving 85% accuracy using Logistic Regression and Decision Trees.
+        </p>
       </div>
 
-      <div class="item">
-        <div class="item-header">
-          <h3>Process Associate</h3>
-          <span>Genpact • 2023–2024</span>
-        </div>
-        <p>Managed financial operations and improved workflows.</p>
+      <div class="card">
+        <h3>Process Associate</h3>
+        <span>Genpact • Sep 2023 – Jul 2024</span>
+        <p>
+          Managed financial operations using SAP and Oracle and improved workflow
+          efficiency and reporting accuracy.
+        </p>
       </div>
 
     </section>
 
+    <!-- PROJECTS -->
     <section>
       <h2>Projects</h2>
 
-      <div class="item">
+      <div class="card">
         <h3>Customer Churn Prediction</h3>
         <p>Machine learning model with 85% accuracy.</p>
       </div>
 
-      <div class="item">
+      <div class="card">
         <h3>Fake News Detection</h3>
         <p>NLP-based classification system.</p>
+      </div>
+
+      <div class="card">
+        <h3>Epidemic Spread Modeling</h3>
+        <p>Statistical forecasting system for disease prediction.</p>
       </div>
 
     </section>
@@ -94,21 +106,6 @@
   </main>
 
 </div>
-
-<!-- ANIMATION SCRIPT -->
-<script>
-  const items = document.querySelectorAll('.item');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-    });
-  });
-
-  items.forEach(item => observer.observe(item));
-</script>
 
 </body>
 </html>
