@@ -46,7 +46,7 @@ body {
   font-weight: 500;
 }
 
-/* SKILLS BADGES */
+/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -75,7 +75,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* CARD DESIGN */
+/* CARD */
 .card {
   background: #ffffff;
   padding: 20px;
@@ -89,7 +89,6 @@ h2 {
   transform: translateY(-5px);
 }
 
-/* TEXT */
 .card span {
   font-size: 13px;
   color: gray;
